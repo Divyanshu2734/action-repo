@@ -1,0 +1,44 @@
+html, body {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+.main{
+    display: flex;
+    height: 100%;
+    
+}
+.r{ 
+    
+    width: 80%;
+}
+.l{
+   
+  
+    width: 20%;
+}
+.t{
+    height: 80%;
+    background-image: url(https://images.unsplash.com/photo-1534880579667-055281049f8d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDgxfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D);
+
+    background-size: cover;
+    background-position: center;
+    
+}
+.b{
+    height: 20%;
+    background-color: black;
+
+}
+
+
+.tl{
+    height: 80%;
+    background-color: pink;
+    
+}
+.bl{
+    height: 20%;
+    background-color: green;
+
+}

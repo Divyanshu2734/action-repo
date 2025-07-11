@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+     position: relative;
+     display: flex;
+     flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1498307833015-e7b400441eb8?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#navv{
+    position: absolute;
+     top: 0;
+    left: 0;
+    z-index: 1000;
+   width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    
+}
+#navright{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 30px;
+ 
+}
+#navright a{
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 400;
+    
+    
+
+}
+#navright :nth-child(1)  {
+    border-bottom: 3px solid white; 
+}
+#navleft{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+#main #left{
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 40px;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.312);
+}
+
+#left .place{
+    color: white;
+}
+#left .place:nth-child(2) h4{
+    font-size: 50px;
+    white-space: nowrap;
+}
+#left .place:nth-child(2) h6{
+    font-size: 30px;
+    white-space: nowrap;
+}
+.place h4{
+    border-bottom: 1px solid white;
+}
+
+#main #right{
+    width: 70%;
+    height: 100%;
+    
+}
+#right #text{
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+    color: white;
+    text-align: right;
+}
+#text h3{
+    font-size:40px ;
+    font-weight: 400;
+    line-height: 1;
+}
+#text h1{
+    font-size: 200px;
+    line-height: 1;
+}
+
+@media(max-width:500px){
+    #main #navv #navleft{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    
+    
+    
+    
+    #navright a{
+        font-size: 16px;
+        font-weight: 250;
+        border-bottom: none;
+    }
+    #navv #navright{
+        display: none;
+    }
+
+}
